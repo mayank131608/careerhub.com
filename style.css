@@ -1,86 +1,125 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 body{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(WhatsApp\ Image\ 2024-03-16\ at\ 13.49.49_b44ba45c.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.banner{
-    width: 100%;
-    height: 50vh;
-}
-.navbar
-{
-    width: 85%;
-    margin: auto;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo
-{
-    width: 75px;
-    cursor: pointer;
-    border: solid #ffffff;
-    border-radius: 100%;
-}
-.navbar ul li
-{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: smaller;
-}
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-.navbar ul li:hover::after
-{
-    width: 100%;
-}
 
-.jobseeker
-{
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+header{
+    /* padding-left: 12vw; */
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.img img{
+    height: 18vh;
+    width: 10vw;
+    border-radius: 50%;
     
-    width: 60%;
-    color: white;
-    background-color: rgba(78, 68, 68, 0.75);
-    margin: auto;
-    padding: 30px 30px 30px 30px;
-    text-align: center;
-    border: solid black;
+}
+.title{
+    padding-top: 5vh;
+    font-size: xx-large;
+    position: relative;
+    left: 0px;
+    color:darkkhaki;
+}
+.form{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+margin-top: 5vh;
+border: solid;
+border-radius: 14px;
+border-color: rgb(197, 154, 14);
+padding: 5vh 10vw;
+margin-right: 25vw;
+margin-left: 33.5vw;
+margin-bottom: 5vh;
+font-size: x-large;
+}
+input{
     border-radius: 20px;
-    margin-bottom: 10px;
+   
+}
+.name{
+    display: flex;
+    flex-direction: column;
+padding-bottom: 2vh;
+border-radius: 50px;
+color: aliceblue;
+}
+.pass{
+    display: flex;
+    flex-direction: column;
+/* padding-bottom: 2vh; */
+border-radius: 50px;
+color: aliceblue;
+
+}
+.reset{
+
+margin-bottom: 2vh;
+
+
 }
 a{
     text-decoration: none;
-    color: white;
+    color: aliceblue;
 }
-.jobprovider
-{
-    margin: auto;
-    width: 60%;
-    color: white;
-    background-color: rgba(78, 68, 68, 0.75);
-    padding: 30px 30px 30px 30px;
+.signup{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(94, 144, 149);
+    border-radius: 50px;
+    color: aliceblue;
+    font-size: 1rem;
+    width: 12vw;
+    padding: 20px;
+}
+.google{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(94, 144, 149);
+    border-radius: 50px;
+    color: aliceblue;
+    font-size: 1rem;
+    width: 12vw;
+    padding: 20px;
+}
+input:hover{
+    border: 3px solid rgb(197, 154, 14);
+}
+.button:hover{
+    background-color: rgb(197, 154, 14);
+    opacity: 70%;
+}
+.phone{
+    margin-top: 5px;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(94, 144, 149);
+    border-radius: 50px;
+    color: aliceblue;
+    width: 12vw;
+    padding: 20px;
+}
+.copyright{
+    color: black;
+    padding: 5px 0;
     text-align: center;
-    border: solid black;
-    border-radius: 20px;
+    height: fit-content;
+    background-color: white;
 }
