@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: gray; */
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(WhatsApp\ Image\ 2024-03-16\ at\ 13.49.49_b44ba45c.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>POST A JOB</h1>
+        <form action="#">
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="jobLocation">Job Location:</label>
+            <input type="text" id="jobLocation" name="jobLocation" required>
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+
+            <label for="companyWebsite">Company Website:</label>
+            <input type="text" id="companyWebsite" name="companyWebsite">
+
+            <label for="companyDescription">Company Description:</label>
+            <textarea id="companyDescription" name="companyDescription" required></textarea>
+
+            <label for="jobDescription">Job Description:</label>
+            <textarea id="jobDescription" name="jobDescription" required></textarea>
+
+            <label for="responsibilities">Responsibilities:</label>
+            <textarea id="responsibilities" name="responsibilities" required></textarea>
+
+            <label for="requirements">Requirements:</label>
+            <textarea id="requirements" name="requirements" required></textarea>
+
+            <label for="benefits">Benefits:</label>
+            <textarea id="benefits" name="benefits"></textarea>
+
+            <label for="howToApply">How to Apply:</label>
+            <textarea id="howToApply" name="howToApply" required></textarea>
+
+            <label for="applicationDeadline">Application Deadline:</label>
+            <input type="text" id="applicationDeadline" name="applicationDeadline" required>
+
+            <label for="contactName">Contact Name:</label>
+            <input type="text" id="contactName" name="contactName" required>
+
+            <label for="contactEmail">Contact Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail" required>
+
+            <label for="contactPhone">Contact Phone:</label>
+            <input type="text" id="contactPhone" name="contactPhone" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

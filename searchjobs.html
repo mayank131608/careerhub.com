@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(WhatsApp\ Image\ 2024-03-16\ at\ 13.49.49_b44ba45c.jpg);
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: #f7f7f7; */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Search</h1>
+        <form action="#">
+            <label for="keyword">Keyword:</label>
+            <input type="text" id="keyword" name="keyword" placeholder="e.g., Software Engineer, Marketing Manager">
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="e.g., New York, London">
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="">Select a category</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+                <option value="finance">Finance</option>
+                <option value="design">Design</option>
+                <!-- Add more categories as needed -->
+            </select>
+
+            <label for="type">Job Type:</label>
+            <select id="type" name="type">
+                <option value="">Select a job type</option>
+                <option value="full-time">Full-time</option>
+                <option value="part-time">Part-time</option>
+                <option value="contract">Contract</option>
+                <!-- Add more job types as needed -->
+            </select>
+
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
