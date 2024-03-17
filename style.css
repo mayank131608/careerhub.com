@@ -46,7 +46,8 @@ font-size: x-large;
 }
 input{
     border-radius: 20px;
-   
+   width: 15vw;
+   height: 5vh;
 }
 .name{
     display: flex;
@@ -121,5 +122,50 @@ input:hover{
     padding: 5px 0;
     text-align: center;
     height: fit-content;
-    background-color: white;
+    background-color: rgb(197, 154, 14);
+}
+@media only screen and (max-width: 800px){
+   .img img{
+   height: 100px;
+    width: 100px;
+    margin-top: 10vh;
+    border: 2px solid rgb(197, 154, 14);
+   }
+   .title{
+    padding-top: 5vh;
+   }
+   .form{
+    padding-top: 2vh;
+    padding-right:vw;
+    margin-left: 15vw;
+    width: 48vw;
+    
+   }
+   .name{
+    font-size: 1.2rem;
+   }
+   .pass{
+    font-size: 1.2rem;
+   }
+   input{
+    margin-top: 1.5vh;
+    height: 3vh;
+    width: 50vw;
+   }
+   .reset{
+    font-size: 1rem;
+   }
+   .button{
+    width: 40vw;
+   }
+   input:hover{
+    border: 2px solid rgb(197, 154, 14);
+}
+.button:hover{
+    background-color: rgb(197, 154, 14);
+    opacity: 70%;
+}
+.copyright{
+    margin-top: 8.5vh;
+}
 }
