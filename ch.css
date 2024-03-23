@@ -1,0 +1,300 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 5px rgb(191, 191, 191);
+    background-color: white;
+    z-index: 1;
+}
+.title{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Passero One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(59, 59, 255);
+    font-size: 25px;
+}
+.left{
+    margin: 0;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    width: 20vw;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.right{
+    width: 25vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.searchbar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex: 1;
+    max-width: 40vw;
+    padding-left: 10px;
+    border: 1px solid rgb(207, 207, 207);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 1px 1px 1px rgb(200, 200, 200);
+    height: 25px;
+}
+.search{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(207, 207, 207);
+    border-left: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 1px 1px 1px rgb(200, 200, 200);
+    cursor: pointer;
+}
+.search:hover{
+    background-color: rgb(239, 239, 239);
+    box-shadow: 1px 1px 1px rgb(172, 172, 172);
+    border-color: rgb(165, 165, 165);
+}
+.searchbar:hover{
+    border-color: rgb(165, 165, 165);
+}
+.searchbar::placeholder{
+    font-family: sans-serif;
+}
+.searchicon{
+    width: 12px;
+}
+.login{
+    margin-right: 1.5vw;
+    border-radius: 3px;
+    border: 1px solid rgb(59, 59, 255);
+    color: rgb(59, 59, 255);
+    background-color: none;
+    padding: 2px 4px 2px 4px;
+    transition: 0.20s;
+    cursor: pointer;
+    background-color: white;
+}
+.login:hover{
+    background-color: rgb(59, 59, 255);
+    color: white;
+    box-shadow: 1px 1px 3px rgb(52, 103, 244);
+}
+
+.signup{
+    margin-right: 4vw;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(10, 205, 27);
+    color: white;
+    padding: 3px 5px 3px 5px;
+    transform: 0.20s;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.signup:hover{
+    opacity: 0.8;
+    box-shadow: 1px 1px 3px rgb(20, 255, 40);
+}
+.container{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+.jobprovider,.jobseeker,.explorer{
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 1px 1px 5px rgb(198, 198, 198);
+    transition: 0.20s;
+}
+.jobproimg,.jobseekimg,.explimg{
+    width: 220px;
+}
+.heading{
+    margin: 0;
+    padding-left: 5px;
+    font-family: "Roboto Condensed",verdana,sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+}
+.matter{
+    font-size: 14px;
+    line-height: 17px;
+    font-family: verdana;
+    color: rgb(88, 88, 88);
+    margin-top: 10px;
+    padding-left: 5px;
+    width: 190px;
+}
+.jobprovider:hover,.jobseeker:hover,.explorer:hover{
+    opacity: 0.85;
+    box-shadow: 2px 2px 8px rgb(148, 148, 148);
+}
+.tipsmatter{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: verdana;
+    color: rgb(88, 88, 88);
+    flex: 1;
+    padding-right: 10px;
+}
+.tips{
+    display: flex;
+    margin-left: 54px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px grey;
+    margin-right: 54px;
+    margin-bottom: 40px;
+}
+.matterheading{
+    font-family: "Roboto Condensed",verdana,sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    font-size: 20px;
+}
+.tipsimg{
+    width: 250px;
+    object-fit: cover;
+}
+.tipsheading{
+    margin: 0;
+    padding-left: 54px;
+    font-weight: 600;
+    font-size: 25px;
+    color: black;
+    font-family: "Roboto Condensed",verdana,sans-serif;
+}
+.contact{
+    font-size: 15px;
+    text-align: center;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid #dadada;
+}
+.copy{
+    font-size: 10px;
+    display: flex;
+    gap: 4px;
+}
+.copyright{
+    width: 10px;
+    vertical-align: top;
+}
+@media(max-width: 600px)
+{
+    .container{
+        flex-direction: column;
+        margin-top: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .searchbar,.search{
+        display: none;
+    }
+    .header{
+        height: 50px;
+    }
+    .title{
+        width: 180px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        font-family: "Passero One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(59, 59, 255);
+        font-size: 30px;
+    }
+    .login{
+        font-size: 20px;
+    }
+    .right{
+        width: 50vw;
+    }
+    .signup{
+        font-size: 20px;
+        width: 100px;
+    }
+    .jobproimg,.jobseekimg,.explimg{
+        width: 250px;
+    }
+    .matter{
+        width: 230px;
+        line-height: 19px;
+    }
+    .tipsmatter{
+        margin-top: 5px;
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 19px;
+        font-family: verdana;
+        color: rgb(88, 88, 88);
+        flex: 1;
+        padding-right: 10px;
+    }
+    .tips{
+        width: 250px;
+        display: flex;
+        margin-left: 45px;
+        flex-direction: column;
+        margin-top: 20px;
+        box-shadow: 1px 1px 5px grey;
+        margin-bottom: 40px;
+    }
+    .matterheading{
+        font-family: "Roboto Condensed",verdana,sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        color: black;
+        font-size: 20px;
+    }
+    .tipsimg{
+        width: 250px;
+        object-fit: contain;
+    }
+    body{
+        width: 95vw;
+    }
+    .tipsheading{
+        padding: 0;
+        margin-left: 45px;
+        font-weight: 600;
+        font-size: 25px;
+        color: black;
+        font-family: "Roboto Condensed",verdana,sans-serif;
+    }
+}

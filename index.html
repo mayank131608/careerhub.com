@@ -1,57 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN to careerhub.com</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Career Hub</title>
+    <link rel="stylesheet" href="ch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passero+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    
-    <header>
-        <div class="img" id="1">
-        <img src="logo.jpg" alt="careerhub">
-    </div>
-        <div class="title">
-            Signin to CareerHub.com
+    <div class="header">
+        <div class="left">
+            <a href="#">
+                <button class="title">
+                    CAREER HUB
+                </button>
+            </a>
         </div>
-
-    </header>
-    <div class="form">
-        <form action="backend.php">
-            <div class="forminput">
-                <div class="name font">
-                    USERNAME : <input type="text" name="username">
-                </div>
-                <div class="pass font">
-                    PASSWORD : <input type="password" name="password"><br>
-                </div>
-                <div class="reset">
-                    <a href="#">Forgot Password?</a><br>
-                </div>
-                <div class="signup button">
-                    <a href="home.html">LOGIN </a>
-                </div>
-                <div class="google button">
-                        <i class="fa-brands fa-google" style="margin-right: 1vw;"></i>
-                    <a href="home.html">Continue with Google</a>
-                </div>
-                <div class="phone button" >
-                    
-                    <i class="fa-light fa-phone" style="margin-right: 1vw;"></i>
-                    <a href="home.html">Continue with phone</a>
-                </div>
+        <div class="middle">
+            <input class="searchbar" type="text" placeholder="Search CareerHub.com">
+            <button class="search">
+                <img class="searchicon" src="images/search.svg" alt="">   
+            </button>
+        </div>
+        <div class="right">
+            <button class="login">
+                Login
+            </button>
+            <button class="signup">
+                Sign Up
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <a href="">
+            <div class="jobprovider">
+                <img class="jobproimg" src="images/job-provider.jpg" alt="">
+                <p class="heading">
+                    Job Providers : 
+                </p>
+                <p class="matter">
+                    Struggling to fill open positions? We connect Job Providers with top talent!  Our platform streamlines hiring, offering advanced search filters and detailed candidate profiles. Find the perfect fit quickly and build your dream team. Let's unlock your growth potential - Sign up today!
+                </p>
             </div>
-        </form>
+        </a>
+        <a href="">
+            <div class="jobseeker">
+                <img class="jobseekimg" src="images/job-seeker.jpg" alt="">
+                <p class="heading">
+                    Job Seekers : 
+                </p>
+                <p class="matter">
+                    Our platform connects ambitious job seekers with exciting opportunities across diverse industries.  Search for jobs that match your skills and aspirations.  Showcase your talent with in-depth profiles and targeted messaging tools.  Land your dream job and take the next step in your professional journey.  Start exploring today! 
+                </p>
+            </div>
+        </a>
+        <a href="">
+            <div class="explorer">
+                <img class="explimg" src="images/explorer.jpg" alt="">
+                <p class="heading">
+                    Explorers : 
+                </p>
+                <p class="matter">
+                    Unveiling Your Career Path.  Explore an ocean of possibilities. Learn from industry experts, test your skills, and find your dream job. Dive into exciting career paths! Discover diverse career paths, assess your skills, and connect with mentors. Fuel your career exploration journey - Start today!
+                </p>
+            </div>
+        </a>
     </div>
-    <footer>
-        <div class="copyright">
-            © 2023-2024, careerhub.com, Inc. or its affiliates
+    <p class="tipsheading">
+        Launch Your Dream Career: Essential Tips for Success
+    </p>
+    <div class="tips">
+        <img class="tipsimg" src="images/career-goals.jpg" alt="">
+        <p class="tipsmatter">
+            <span class="matterheading">
+                Career Goals :
+            </span>
+            <br>
+            <br>
+            Career goals are your roadmap to professional fulfillment. They can be short-term, like mastering a new skill, or long-term, like becoming a CEO. Whether you crave a promotion, a career change, or to make a social impact, setting goals keeps you motivated and focused. <br>
+            Good career goals should challenge you but remain attainable.  Having a mix of long-term and short-term goals helps you stay on track and celebrate milestones. Regularly revisit and revise your goals as your interests and experience evolve. 
+        </p>
+    </div>
+    <div class="tips">
+        <img class="tipsimg" src="images/job-opportunites.jpg" alt="">
+        <p class="tipsmatter">
+            <span class="matterheading">
+                Job Opportunities :
+            </span> 
+            <br>
+            <br>
+            The job market is brimming with opportunities! From tech giants like Amazon (Amazon.jobs) to established firms like Accenture (Careers & Job Opportunities in India - Accenture), there's something for everyone.  Explore in-demand fields like data analysis or get creative in industries like generative AI.
+            <br>
+            For those just starting out,  companies offer internships and programs to help launch your career. Don't forget to consider remote work options for flexibility!
+        </p>
+    </div>
+    <div class="tips">
+        <img class="tipsimg" src="images/skill-development.jpg" alt="">
+        <p class="tipsmatter">
+            <span class="matterheading">
+                Skill Development :
+            </span> 
+            <br><br>
+            Skill development is the process of acquiring or improving new skills, regardless of age or background. It's a continuous learning process that helps you reach your full potential and achieve your goals.
+            <br>
+            The best way to develop new skills is to find something that you're interested in and that aligns with your career goals. Once you've found a skill that you want to learn, set some specific goals for yourself and create a plan for how you're going to achieve them. 
+        </p>
+    </div>
+    <div class="tips">
+        <img class="tipsimg" src="images/communication-skills.jpg"alt="">
+        <p class="tipsmatter">
+            <span class="matterheading">
+                Communication Skills :
+            </span> 
+            <br><br>
+            Communication skills are the abilities you use to effectively exchange information with others. This includes both verbal and nonverbal communication, as well as written communication. Strong communication skills are essential for success in both personal and professional life.
+        </p>
+    </div>
+    <div class="contactus">
+        <p class="contact">
+            For any Queries : 
+            <br>
+            Contact Us at : careerhub@gmail.com
+        </p>
+    </div>
+    <div class="footer">
+        <div class="copy">
+            <p>
+                All rights reserved
+            </p>
+            <img class="copyright" src="images/c-circle.svg" alt="">
+            <p>
+                2023-2024
+            </p>
         </div>
-    </footer>
+        <img class="icons" src="images/youtube.svg" alt="">
+        <img class="icons" src="images/twitter-x.svg" alt="">
+        <img class="icons" src="images/linkedin.svg" alt="">
+        <img class="icons" src="images/instagram.svg" alt="">
+        <img class="icons" src="images/facebook.svg" alt="">
+    </div>
 </body>
-
 </html>
